@@ -1,0 +1,16 @@
+package br.com.fiap.banco;
+
+public class Teste {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		Conta cc = new Conta();
+
+		cc.saldo = 50;
+		cc.agencia = 123;
+		cc.numero = 321;
+
+	}
+
+}
