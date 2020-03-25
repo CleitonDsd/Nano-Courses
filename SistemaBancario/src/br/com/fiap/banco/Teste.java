@@ -7,15 +7,15 @@ public class Teste {
 
 		Conta cc = new Conta();
 
-		cc.saldo = 50;
-		cc.agencia = 123;
-		cc.numero = 321;
+		cc.depositar(50);
+		cc.setAgencia(123);
+		cc.setNumero(321);
 		cc.depositar(1000);
-		System.out.println("Saldo atual (R$): " + cc.verificarSaldo());
+		System.out.println("Saldo atual (R$): " + cc.getSaldo());
 
 		Conta poupanca = new Conta(111, 222, 1000);
 		poupanca.retirar(50);
-		System.out.println("Saldo atual (R$): " + poupanca.verificarSaldo());
+		System.out.println("Saldo atual (R$): " + poupanca.getSaldo());
 
 		Conta cc2 = null;
 
